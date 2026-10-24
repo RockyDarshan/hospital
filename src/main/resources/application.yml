@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hospital
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hospital
+    username: postgres
+    password: Shetty@31
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
