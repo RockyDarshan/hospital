@@ -12,6 +12,8 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     @EntityGraph(attributePaths = "user")
     Page<Patient> findByFullNameContainingIgnoreCase(String name, Pageable pageable);
 
+    boolean existsByIdAndUserId(Long id, Long userId);
+
     @EntityGraph(attributePaths = "user")
     Optional<Patient> findWithUserById(Long id);
 }
