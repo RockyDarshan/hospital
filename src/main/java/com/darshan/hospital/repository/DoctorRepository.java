@@ -20,4 +20,7 @@ public interface DoctorRepository  extends JpaRepository<Doctor,Long> {
 
     @EntityGraph(attributePaths = {"department", "user"})
     Optional<Doctor> findWithDetailsById(Long id);
+
+    Optional<Doctor> findByUserId(Long userId);
 }
+

@@ -24,3 +24,5 @@ app:
   admin:
     email: ${ADMIN_EMAIL:}
     password: ${ADMIN_PASSWORD:}
+  clinic:
+    zone: Asia/Kolkata
